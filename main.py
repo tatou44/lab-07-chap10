@@ -3,14 +3,14 @@
 from typing import List
 class Student:
 
-    numofstudents = 0
+    numofstudent = 0  # to count students
 
     def __init__(self, name: str, scores: List[int]):     # added a type hint to scores
         self._name = name
         self._scores = scores        
 
         # increamenting the number of students:
-        Student.numofstudents = Student.numofstudents + 1
+        Student.numofstudent = Student.numofstudent + 1
 
     # defining getters and setters to get values of attributes and set new values to attributes:
 
@@ -94,7 +94,7 @@ def main():
     s2 = Student('Mary', sc2)
     print(s1)
     print(s2)
-    print(f'Total number of students: {Student.numofStudent}')
+    print(f'Total number of students: {Student.numofstudent}')
     print(f'Difference between s1 and s2 scores: {s1-s2}')
 
     print(s1 > s2)
